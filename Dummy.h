@@ -1,7 +1,7 @@
 #include <windows.h>
 #include <iostream>
 #include <iomanip>
-<stdlib.h>
+#include <stdlib.h>
 
 class Vector
 {
