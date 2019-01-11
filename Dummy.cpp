@@ -19,11 +19,16 @@ int main()
 	A Aclass;
 	B Bclass;
 	
-	while (!GetKeyState(VK_F10) &0x8000)
+	while (!(GetKeyState(VK_F10) & 0x8000))
 	{
 		
 		
-		std::cout << std::hex << std::uppercase << x << std::nouppercase << std::dec << std::endl;
+		
+		std::cout << "BClass: " << std::endl;
+		std::cout << std::hex << std::uppercase << *(DWORD*)AClass << std::nouppercase << std::dec << std::endl;
+		std::cout << "AClass: " << std::endl;
+		std::cout << std::hex << std::uppercase << *(DWORD*)AClass << std::nouppercase << std::dec << std::endl;
+		system("CLS");
 		Sleep(0);
 	}
 	return EXIT_SUCCESS;
